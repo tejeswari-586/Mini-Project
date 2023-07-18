@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='homestyle.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='bdstyle.css')}}">
+</head>
+  <body>
+    <div class="head">
+        <div class="icon"><img src="{{url_for('static',filename='icon.jpg')}}" class="iimage"></div>
+        <h1 class="heading">Secondhand Book Management System</h1>
+    </div>
+    <div class="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!--<a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/homepage" id="home"><b>Home</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/viewpage"  id="view"><b>Viewbooks</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/uploadpage" id="upload"><b>Uploadbooks</b></a>
+              </li>
+            <div class="searchdiv">
+            <form class="d-flex" id="searchbar" role="search">
+              <input class="form-control me-2" style="border:2px solid black;" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      </div>
+      <!--<div class="bdetails">
+        <div class="bookimages">
+            <div class="bookimage">
+            <img src="{{url_for('static',filename='polity.jpg')}}" class="bookim">
+            </div>
+        </div>
+        <div class="details">
+            <h2 style="text-align:center;color:black;margin-top:40px;">Indian Polity</h2>
+            <h6><b>Author name :- M Laxmikanth </b></h6>
+            <h6>About Book</h6>
+            <p> Indian Polity by M Laxmikanth needs no introduction. For the last few years, it has been the most popular and comprehensive book on the subject and has been a consistent bestseller for many years. It has become a must-read for Civil Services aspirants appearing in various competitive examinations, especially UPSC Prelims and Main. The wide range and scope of issues that are covered in the book also make the book invaluable students who want reliable research material and information on the country’s political and constitutional issues</p>
+            <h6>Book Owner Address </h6>
+        </div>
+      </div>-->
+      {%for b in book:%}
+      <div class="bdetails">
+        <div class="bookimages">
+            <div class="bookimage">
+            <img src="{{url_for('static',filename=b.Front_view)}}" class="bookim">
+            </div>
+        </div>
+        <div class="details">
+            <!--<h2 style="text-align:center;color:black;margin-top:40px;">{{b.Book_name}}</h2>-->
+            <h2 style="text-align:center;color:black;margin-top:40px;" id="bname">{{b.Book_name}}</h2>
+            <h6><b>Author name :- {{b.Author_name}} </b></h6>
+            <h6>About Book</h6>
+            <p>{{b.About_book}}</p>
+            <h6><u>Contact details of  Book owner</u></h6>
+            <p>{{b.Address}}<br>
+              {{b.Phone_Number}}
+            </p>
+            </div>
+      </div>
+      {%endfor%}
+      <!--<script  src="{{url_for('static',filename='homejs.js')}}"></script>-->
+      <script  src="{{url_for('static',filename='homejs.js')}}"></script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+  <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Login Page</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+  </head>
+  <body>
+    <div class="loginpage">
+     <h3 class="heading"><b>Login</b></h3>
+     <div class="inputfield">
+       <form name="formex" method="POST" action="http://127.0.0.1:5000/loginaut">
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Username</label><br>
+            <div class="input-group flex-nowrap fe  no-outline">
+                <span class="input-group-text" id="addon-wrapping"><img class="img1" 
+                  src="{{url_for('static',filename='user1.jpg')}}"></span>
+                <input type="text" class="form-control" name="email" id="user" 
+                placeholder="Type your username" aria-label="Username" aria-describedby="addon-wrapping" 
+                name="username" required>
+              </div>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Password</label><br>
+            <div class="input-group flex-nowrap fe  no-outline">
+                <span class="input-group-text" id="addon-wrapping"><img class="img1" 
+                  src="{{url_for('static',filename='pass.jpg')}}"></span>
+                <input type="password" class="form-control"  name="password" id="pass" 
+                placeholder="Type your password"  aria-describedby="addon-wrapping" name="password" required>
+              </div>
+          </div>
+          <a href="/reset"><p class="fg">Forgot password?</p></a>
+          <input type="submit" class="bt" value="LOGIN" onclick="validateform()">
+          <p class="su">Or continue with</p>
+        </form>
+        <!--<a href="#"><p class="fg">Forgot password?</p></a>
+          <input type="submit" class="bt" value="LOGIN" onclick="validateform()">
+          <p class="su">Or sign Up Using</p>-->
+          <div class="sources">
+            <a href="#"><img class="sou" src="{{url_for('static',filename='face.jpg')}}"></a>
+            <a href="#"><img class="sou" src="{{url_for('static',filename='twitter.jpg')}}"></a>
+            <a href="#"><img class="sou" src="{{url_for('static',filename='google.jpg')}}"></a>
+          </div>
+     </div>
+     <p class="su">Or sign Up Using</p>
+     <a href="/signuppage"><h6>Sign Up</h6></a>
+    </div>
+   <script>
+    function validateform(){
+      let name=document.querySelector("#user").value;
+      let password=document.querySelector("#pass").value;
+      if(name=="" && password==""){
+        alert("please enter username and password");
+      }
+      else{
+        if(name==""){
+          alert("please enter username");
+        }
+        else if(password==""){
+          alert("please enter password");
+        }
+      }
+    }
+   </script>
+  </body>
+</html>

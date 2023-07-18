@@ -1,0 +1,82 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: darkcyan;
+}
+ .heading{
+    text-align: center;
+    color:whitesmoke;
+    margin-right:250px;
+ }
+ .icon{
+    height:50px;
+    width:50px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left:10px;
+    margin-top:2px;
+    background-color: white;
+ }
+ .iimage{
+    height:35px;
+    width:35px;
+    margin-left:6px;
+    margin-top:4px;
+    border-radius:6px;
+ }
+ .head{
+    display:flex;
+    margin-top:10px;
+    justify-content: space-between;
+    /*background-color: darkgrey;*/
+ }
+ .navbar{
+    margin-top:10px;
+    width:100%;
+ }
+ #searchbar{
+    margin-left: 690px;
+    width:250px;
+    margin-right:0px;
+ }
+ /*.nav-con{
+  display:flex;
+  justify-content:space-between;
+ }*/
+ #home{
+  margin-left:20px;
+ }
+ #view{
+  margin-left:50px;
+ }
+ #upload{
+  margin-left:50px;
+ }
+ .bdetails{
+    display:flex;
+    justify-content:space-around;
+    margin-top: 20px;
+    background-color: whitesmoke;
+ }
+ .bookimages{
+    height:600px;
+    width:600px;
+    /*border:2px solid black;*/
+ }
+ .details{
+    height:600px;
+    width:600px;
+    /*border:2px solid black;
+    background-color: whitesmoke;*/
+ }
+ .bookim{
+    height:300px;
+    width:300px;
+    margin-top:50px;
+    margin-left:50px;
+ }
+ .bookimage{
+    align-items: center;
+ }

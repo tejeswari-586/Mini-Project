@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+
+ <link rel="stylesheet"  href="{{url_for('static',filename='style2.css')}}">
+</head>
+  <body>
+    <div class="signup">
+        <h3 class="heading"><b>Sign Up</b></h3>
+        <div class="inputfield">
+        <form action="http://127.0.0.1:5000/signuping" method="POST">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">First Name</label>
+            <input type="text" name="fname" class="form-control border-dark" 
+            id="exampleFormControlInput1" placeholder="enter first name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+            <input type="text" name="lname" class="form-control border-dark" 
+            id="exampleFormControlInput1" placeholder="enter last name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control border-dark" 
+            id="exampleFormControlInput1" placeholder="enter email">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control border-dark" 
+            id="exampleFormControlInput1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
+            <input type="password" name="confirm_password" class="form-control border-dark" 
+            id="exampleFormControlInput1">
+          </div>
+          <input type="submit" class="bt" value="Sign Up">
+          </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+  </body>
+</html>

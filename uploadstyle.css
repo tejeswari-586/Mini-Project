@@ -1,0 +1,134 @@
+.upl{
+    text-align:center;
+    margin-left:500px;
+    border:2px solid white;
+    height:1100px;
+    width:400px;
+    /*margin-top:20px;*/
+}
+input{
+    margin-right:60px;
+    align:center;
+}
+.em{
+    margin-right:40px;
+}
+.bn{
+    margin-left:3px;
+}
+.pr{
+    margin-right:40px;
+}
+.fv{
+    margin-right:240px;
+}
+.bv{
+    margin-right:240px;
+}
+.sv{
+    margin-right:240px;
+}
+.pn{
+    margin-left:10px;
+}
+.address{
+    margin-right:5px;
+}
+.bq{
+    margin-right:120px;
+}
+.sub{
+    margin-left:30px;
+}
+label{
+    color:white;
+}
+h1{
+    color:white;
+    margin-top:5px;
+}
+form{
+    margin-top:30px;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: darkcyan;
+}
+ .heading{
+    text-align: center;
+    color:whitesmoke;
+    margin-right:250px;
+ }
+ .icon{
+    height:50px;
+    width:50px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left:10px;
+    margin-top:2px;
+    background-color: white;
+ }
+ .iimage{
+    height:35px;
+    width:35px;
+    margin-left:6px;
+    margin-top:4px;
+    border-radius:6px;
+ }
+ .head{
+    display:flex;
+    margin-top:10px;
+    justify-content: space-between;
+    /*background-color: darkgrey;*/
+ }
+ .navbar{
+    margin-top:10px;
+    width:100%;
+ }
+ #searchbar{
+    margin-left: 700px;
+    width:250px;
+    margin-right:0px;
+    margin-top: -5px;
+ }
+ /*.nav-con{
+  display:flex;
+  justify-content:space-between;
+ }*/
+ #home{
+  margin-left:20px;
+ }
+ #view{
+  margin-left:50px;
+ }
+ #upload{
+  margin-left:50px;
+ }
+ marquee{
+  height:50px;
+   color:white;
+ }
+ .book{
+    height:170px;
+    width:300px;
+    background-color: white;
+    margin-left:30px;
+    margin-top:20px;
+    border:1px solid white;
+    border-radius: 10px;
+    display:flex;
+ }
+ .bookim{
+    height:165px;
+    width:120px;
+    /*margin-left:5px;
+    margin-top:20px;*/
+    margin:2px;
+ }
+ .bookdetails{
+    margin-left:20px;
+    margin-top:10px;
+ }
